@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -37,7 +39,7 @@ Game.create([
             ])
 
 Event.create([
-               { name: "Hooper's Rebound: Fundraiser Event", description: "Fundraiser Event for players rebounding from injury", date: DateTime.strptime("09/14/2009 8:00", "%m/%d/%Y %H:%M"), location: "586 Sunnybrook Road Ridgeland, Ms", likes: nil, loves: nil, school_id: 1 }
+               { name: "Hooper's Rebound: Fundraiser Event", description: "Fundraiser Event for players rebounding from injury", date: DateTime.strptime("09/14/2009 8:00", "%m/%d/%Y %H:%M"), location: "586 Sunnybrook Road Ridgeland, Ms", likes: 0, loves: 0, school_id: 1 }
              ])
 
 Category.create([
@@ -49,7 +51,7 @@ Author.create([
               ])
 
 Article.create([
-                 { name: "The Vertical Rise of Micheal Jordan", author_id: 1, content: "A long string of things", school_id: 1, is_published: true, publish_date: DateTime.strptime("09/14/2009 8:00", "%m/%d/%Y %H:%M"), likes: nil, loves: nil, thumbnail: "url-to-image" }
+                 { name: "The Vertical Rise of Micheal Jordan", author_id: 1, content: "A long string of things", school_id: 1, is_published: true, publish_date: DateTime.strptime("09/14/2009 8:00", "%m/%d/%Y %H:%M"), likes: 0, loves: 0, thumbnail: "url-to-image" }
                ])
 
 Image.create([

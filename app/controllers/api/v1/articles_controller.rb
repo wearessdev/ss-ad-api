@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Api::V1::ArticlesController < Api::BaseController
-  before_action :set_article, only: %i[show update destroy]
+  before_action :set_article, except: %i[create]
 
   # GET /articles
   # GET /articles.json
@@ -39,11 +41,31 @@ class Api::V1::ArticlesController < Api::BaseController
     @article.destroy
   end
 
+  def like
+    @article.likes += 1
+    @article.save
+  end
+
+  def love
+    @article.loves += 1
+    @article.save
+  end
+
+  def dislike
+    @article.likes -= 1
+    @article.save
+  end
+
+  def dislove
+    @article.loves -= 1
+    @article.save
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
   def set_article
-    @article = Article.find(params[:id])
+    @article = Article.find(params[:article_id])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.

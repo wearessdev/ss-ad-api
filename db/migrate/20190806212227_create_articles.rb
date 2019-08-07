@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateArticles < ActiveRecord::Migration[5.2]
   def change
     create_table :articles do |t|
@@ -6,8 +8,8 @@ class CreateArticles < ActiveRecord::Migration[5.2]
       t.string      :content
       t.boolean     :is_published
       t.datetime    :publish_date
-      t.integer     :likes
-      t.integer     :loves
+      t.integer     :likes, default: 0
+      t.integer     :loves, default: 0
       t.string      :thumbnail
 
       t.timestamps

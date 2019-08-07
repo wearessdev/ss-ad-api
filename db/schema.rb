@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "content"
     t.boolean "is_published"
     t.datetime "publish_date"
-    t.integer "likes"
-    t.integer "loves"
+    t.integer "likes", default: 0
+    t.integer "loves", default: 0
     t.string "thumbnail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -51,8 +51,8 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "description"
     t.datetime "date"
     t.string "location"
-    t.integer "likes"
-    t.integer "loves"
+    t.integer "likes", default: 0
+    t.integer "loves", default: 0
     t.integer "school_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

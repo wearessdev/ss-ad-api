@@ -1,5 +1,5 @@
 class Api::V1::EventsController < Api::BaseController
-  before_action :set_event, only: [:show, :update, :destroy]
+  before_action :set_event, except: %i[create]
 
   # GET /events
   # GET /events.json
@@ -40,10 +40,30 @@ class Api::V1::EventsController < Api::BaseController
     @event.destroy
   end
 
+  def like
+    @event.likes += 1
+    @event.save
+  end
+
+  def love
+    @event.loves += 1
+    @event.save
+  end
+
+  def dislike
+    @event.likes -= 1
+    @event.save
+  end
+
+  def dislove
+    @event.loves -= 1
+    @event.save
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_event
-      @event = Event.find(params[:id])
+      @event = Event.find(params[:event_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

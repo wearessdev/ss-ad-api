@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Api::V1::StaffsController < Api::BaseController
-  before_action :set_staff, only: [:show, :update, :destroy]
+  before_action :set_staff, only: %i[show update destroy]
 
   # GET /staffs
   # GET /staffs.json
@@ -9,8 +11,7 @@ class Api::V1::StaffsController < Api::BaseController
 
   # GET /staffs/1
   # GET /staffs/1.json
-  def show
-  end
+  def show; end
 
   # POST /staffs
   # POST /staffs.json
@@ -41,13 +42,14 @@ class Api::V1::StaffsController < Api::BaseController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_staff
-      @staff = Staff.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def staff_params
-      params.require(:staff).permit(:first_name, :last_name, :title, :email, :phone)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_staff
+    @staff = Staff.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def staff_params
+    params.permit(:first_name, :last_name, :title, :email, :phone)
+  end
 end
