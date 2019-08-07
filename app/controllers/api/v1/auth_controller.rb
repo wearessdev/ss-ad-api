@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Api::V1::AuthController < Api::BaseController
   # POST api/v1/auth/login
   def login

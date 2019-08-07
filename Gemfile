@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -23,6 +21,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Json Web Token (JWT) for token based authentication
 gem 'jwt'
 
+# Needed for pulling up the rails console
+gem 'rb-readline'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -35,9 +36,16 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
+# Helps with building swagger--API docs
+gem 'rswag'
+gem 'rspec_api_documentation'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  # Rspec to help with testing before deployments
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do

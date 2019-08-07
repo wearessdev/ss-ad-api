@@ -1,8 +1,6 @@
-# frozen_string_literal: true
-
 class Api::V1::UsersController < Api::BaseController
   before_action :set_user, only: %i[show update destroy]
-  skip_before_action :authenticate_user, only: %i[create show index]
+  # skip_before_action :authenticate_user, only: %i[create show index]
 
   # GET /users
   def index
