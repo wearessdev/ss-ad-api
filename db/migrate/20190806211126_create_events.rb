@@ -11,6 +11,7 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.integer     :loves, default: 0
       t.references  :school, foreign_key: true
 
+      t.datetime :deleted_at
       t.timestamps
     end
   end

@@ -12,6 +12,7 @@ class CreateArticles < ActiveRecord::Migration[5.2]
       t.integer     :loves, default: 0
       t.string      :thumbnail
 
+      t.datetime    :deleted_at
       t.timestamps
     end
   end

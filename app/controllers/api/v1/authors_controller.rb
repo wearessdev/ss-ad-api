@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Api::V1::AuthorsController < Api::BaseController
-  before_action :set_author, only: [:show, :update, :destroy]
+  before_action :set_author, only: %i[show update destroy]
 
   # GET /authors
   # GET /authors.json
@@ -9,8 +11,7 @@ class Api::V1::AuthorsController < Api::BaseController
 
   # GET /authors/1
   # GET /authors/1.json
-  def show
-  end
+  def show; end
 
   # POST /authors
   # POST /authors.json
@@ -41,13 +42,14 @@ class Api::V1::AuthorsController < Api::BaseController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_author
-      @author = Author.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def author_params
-      params.require(:author).permit(:name, :school_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_author
+    @author = Author.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def author_params
+    params.require(:author).permit(:name, :school_id)
+  end
 end

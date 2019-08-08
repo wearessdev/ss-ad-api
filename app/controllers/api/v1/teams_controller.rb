@@ -1,17 +1,17 @@
+# frozen_string_literal: true
+
 class Api::V1::TeamsController < Api::BaseController
-  before_action :set_team, only: [:show, :update, :destroy]
+  before_action :set_team, only: %i[show update destroy]
 
   # GET /teams
   # GET /teams.json
   def index
-    @teams = @school.teams
+    @teams = Team.all
   end
 
   # GET /teams/1
   # GET /teams/1.json
-  def show
-    @team = @school.teams.find(params[:id])
-  end
+  def show; end
 
   # POST /teams
   # POST /teams.json
@@ -38,17 +38,23 @@ class Api::V1::TeamsController < Api::BaseController
   # DELETE /teams/1
   # DELETE /teams/1.json
   def destroy
-    @team.destroy
+    if @team.destroy
+      render :show, status: :ok
+    else
+      render json: @team.errors, status: :unprocessable_entity
+    end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_team
-      @team = Team.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def team_params
-      params.require(:team).permit(:name, :school_id, :thumbnail, :twitter_url, :facebook_url, :instagram_url)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_team
+    id = params[:id] || params[:team_id]
+    @team = Team.find(id)
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def team_params
+    params.permit(:name, :thumbnail, :twitter_url, :facebook_url, :instagram_url)
+  end
 end

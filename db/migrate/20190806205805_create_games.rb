@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateGames < ActiveRecord::Migration[5.2]
   def change
     create_table :games do |t|
@@ -10,6 +12,7 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.string      :score
       t.references :school, :team, :season, foreign_key: true
 
+      t.datetime   :deleted_at
       t.timestamps
     end
   end

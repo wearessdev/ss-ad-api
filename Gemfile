@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -36,15 +38,21 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
-# Helps with building swagger--API docs
-gem 'rswag'
-gem 'rspec_api_documentation'
+# Create Fake Data to Test with
+gem 'faker'
 
+# Helps with building swagger--API docs
+gem 'rspec_api_documentation'
+gem 'rswag'
+
+# Soft delete all(most) of the things
+gem "paranoia", "~> 2.2"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Rspec to help with testing before deployments
+  gem "factory_girl_rails", require: false
   gem 'rspec-rails', '~> 3.5'
 end
 

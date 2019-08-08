@@ -13,7 +13,7 @@ Rails.application.routes.draw do
       resources :categories
       resources :teams
 
-      resources :articles, shallow: true do
+      resources :articles, format: :json, shallow: true do
         resources :images
         patch 'like' => 'articles#like'
         patch 'love' => 'articles#love'

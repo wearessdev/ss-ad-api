@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Api::V1::ArticlesController < Api::BaseController
-  before_action :set_article, except: %i[create]
+  before_action :set_article, except: %i[create index]
 
   # GET /articles
   # GET /articles.json
@@ -17,9 +17,8 @@ class Api::V1::ArticlesController < Api::BaseController
   # POST /articles.json
   def create
     @article = Article.new(article_params)
-
     if @article.save
-      render :show, status: :created, location: @article
+      render :show, status: :created, format: :json
     else
       render json: @article.errors, status: :unprocessable_entity
     end
@@ -29,7 +28,7 @@ class Api::V1::ArticlesController < Api::BaseController
   # PATCH/PUT /articles/1.json
   def update
     if @article.update(article_params)
-      render :show, status: :ok, location: @article
+      render :show, status: :ok
     else
       render json: @article.errors, status: :unprocessable_entity
     end
@@ -38,7 +37,11 @@ class Api::V1::ArticlesController < Api::BaseController
   # DELETE /articles/1
   # DELETE /articles/1.json
   def destroy
-    @article.destroy
+    if @article.destroy
+      render :show, status: :ok
+    else
+      render json: @article.errors, status: :unprocessable_entity
+    end
   end
 
   def like
@@ -65,11 +68,12 @@ class Api::V1::ArticlesController < Api::BaseController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_article
-    @article = Article.find(params[:article_id])
+    id = params[:id] || params[:article_id]
+    @article = Article.find(id)
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def article_params
-    params.fetch(:article, {})
+    params.permit(:name, :content, :is_published, :publish_date, :thumbnail, :school_id, :author_id)
   end
 end

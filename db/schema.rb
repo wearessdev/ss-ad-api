@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.integer "likes", default: 0
     t.integer "loves", default: 0
     t.string "thumbnail"
+    t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_id"], name: "index_articles_on_author_id"
@@ -35,6 +36,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "email"
     t.string "image"
     t.integer "school_id"
+    t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["school_id"], name: "index_authors_on_school_id"
@@ -42,6 +44,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
+    t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -54,6 +57,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.integer "likes", default: 0
     t.integer "loves", default: 0
     t.integer "school_id"
+    t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["school_id"], name: "index_events_on_school_id"
@@ -70,6 +74,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.integer "school_id"
     t.integer "team_id"
     t.integer "season_id"
+    t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["school_id"], name: "index_games_on_school_id"
@@ -81,6 +86,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "name"
     t.string "caption"
     t.string "file"
+    t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -95,6 +101,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "height"
     t.string "weight"
     t.string "class_name"
+    t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["school_id"], name: "index_players_on_school_id"
@@ -107,6 +114,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "city"
     t.string "state"
     t.integer "zip"
+    t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -116,6 +124,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.integer "year_end"
     t.integer "school_id"
     t.integer "team_id"
+    t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["school_id"], name: "index_seasons_on_school_id"
@@ -130,6 +139,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "phone"
     t.integer "school_id"
     t.integer "team_id"
+    t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["school_id"], name: "index_staffs_on_school_id"
@@ -144,6 +154,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "twitter_url"
     t.string "facebook_url"
     t.string "instagram_url"
+    t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["school_id"], name: "index_teams_on_school_id"
@@ -154,6 +165,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "token"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "deleted_at"
     t.index ["token"], name: "index_tokens_on_token", unique: true
     t.index ["user_id"], name: "index_tokens_on_user_id", unique: true
   end
@@ -164,6 +176,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "deleted_at"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 

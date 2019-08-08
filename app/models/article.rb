@@ -1,5 +1,6 @@
 class Article < ActiveRecord::Base
-  has_one :author
+  belongs_to :author
   has_many :images
   belongs_to :school
+  acts_as_paranoid
 end

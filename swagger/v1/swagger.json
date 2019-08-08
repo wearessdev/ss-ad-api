@@ -5,5 +5,1005 @@
     "version": "v1"
   },
   "paths": {
+    "/api/v1/articles.json": {
+      "post": {
+        "summary": "Create an Aritcle",
+        "tags": [
+          "Articles"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "article",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "is_published": {
+                  "type": "boolean"
+                },
+                "publish_date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "author_id": {
+                  "type": "integer"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Article Created"
+          }
+        }
+      }
+    },
+    "/api/v1/articles": {
+      "get": {
+        "summary": "Get All Articles",
+        "tags": [
+          "Articles"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "articles returned"
+          }
+        }
+      }
+    },
+    "/api/v1/articles/{id}": {
+      "get": {
+        "summary": "Get Article By ID",
+        "tags": [
+          "Articles"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "article returned",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "is_published": {
+                  "type": "boolean"
+                },
+                "publish_date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "author_id": {
+                  "type": "integer"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete Article By ID",
+        "tags": [
+          "Articles"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "article returned",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "is_published": {
+                  "type": "boolean"
+                },
+                "publish_date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "author_id": {
+                  "type": "integer"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/articles/{id}/like.json": {
+      "patch": {
+        "summary": "Like an Article by id",
+        "tags": [
+          "Articles"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "article liked",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "is_published": {
+                  "type": "boolean"
+                },
+                "publish_date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "author_id": {
+                  "type": "integer"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/articles/{id}/love.json": {
+      "patch": {
+        "summary": "Love an Article by id",
+        "tags": [
+          "Articles"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "article loved",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "is_published": {
+                  "type": "boolean"
+                },
+                "publish_date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "author_id": {
+                  "type": "integer"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/articles/{id}/dislike.json": {
+      "patch": {
+        "summary": "Dislike an Article by id",
+        "tags": [
+          "Articles"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "article loved",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "is_published": {
+                  "type": "boolean"
+                },
+                "publish_date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "author_id": {
+                  "type": "integer"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/articles/{id}/dislove.json": {
+      "patch": {
+        "summary": "Dislove an Article by id",
+        "tags": [
+          "Articles"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "article loved",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "is_published": {
+                  "type": "boolean"
+                },
+                "publish_date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "author_id": {
+                  "type": "integer"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/events.json": {
+      "post": {
+        "summary": "Create an Aritcle",
+        "tags": [
+          "Events"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "event",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Event Created"
+          }
+        }
+      }
+    },
+    "/api/v1/events": {
+      "get": {
+        "summary": "Get All Events",
+        "tags": [
+          "Events"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "events returned"
+          }
+        }
+      }
+    },
+    "/api/v1/events/{id}": {
+      "get": {
+        "summary": "Get Event By ID",
+        "tags": [
+          "Events"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "event returned",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete Event By ID",
+        "tags": [
+          "Events"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "event returned",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                },
+                "deleted_at": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/events/{id}/like.json": {
+      "patch": {
+        "summary": "Like an Event by id",
+        "tags": [
+          "Events"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "event liked",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/events/{id}/love.json": {
+      "patch": {
+        "summary": "Love an Event by id",
+        "tags": [
+          "Events"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "event loved",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/events/{id}/dislike.json": {
+      "patch": {
+        "summary": "Dislike an Event by id",
+        "tags": [
+          "Events"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "event loved",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/events/{id}/dislove.json": {
+      "patch": {
+        "summary": "Dislove an Event by id",
+        "tags": [
+          "Events"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "event loved",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "school_id": {
+                  "type": "integer"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "likes": {
+                  "type": "integer"
+                },
+                "loves": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/teams.json": {
+      "post": {
+        "summary": "Create a Team",
+        "tags": [
+          "Teams"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "team",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "sport": {
+                  "type": "string"
+                },
+                "thumbnail": {
+                  "type": "string"
+                },
+                "twitter_url": {
+                  "type": "string"
+                },
+                "facebook_url": {
+                  "type": "string"
+                },
+                "instagram_url": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Team Created"
+          }
+        }
+      }
+    },
+    "/api/v1/teams": {
+      "get": {
+        "summary": "Get All Teams",
+        "tags": [
+          "Teams"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Teams Returned"
+          }
+        }
+      }
+    },
+    "/api/v1/teams/{id}": {
+      "get": {
+        "summary": "Get Team By ID",
+        "tags": [
+          "Teams"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Team Returned",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "sport": {
+                  "type": "string"
+                },
+                "thumbnail": {
+                  "type": "string"
+                },
+                "twitter_url": {
+                  "type": "string"
+                },
+                "facebook_url": {
+                  "type": "string"
+                },
+                "instagram_url": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete Team By ID",
+        "tags": [
+          "Teams"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Team Deleted",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "sport": {
+                  "type": "string"
+                },
+                "thumbnail": {
+                  "type": "string"
+                },
+                "twitter_url": {
+                  "type": "string"
+                },
+                "facebook_url": {
+                  "type": "string"
+                },
+                "instagram_url": {
+                  "type": "string"
+                },
+                "deleted_at": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/teams/{id}/players": {
+      "get": {
+        "summary": "Get All Team Players",
+        "tags": [
+          "Teams"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Players Returned"
+          }
+        }
+      }
+    },
+    "/api/v1/teams/{id}/staffs": {
+      "get": {
+        "summary": "Get All Team Staff",
+        "tags": [
+          "Teams"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Staff Returned"
+          }
+        }
+      }
+    },
+    "/api/v1/teams/{id}/games": {
+      "get": {
+        "summary": "Get All Team Games",
+        "tags": [
+          "Teams"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Games Returned"
+          }
+        }
+      }
+    },
+    "/api/v1/teams/{id}/seasons": {
+      "get": {
+        "summary": "Get All Team Seasons",
+        "tags": [
+          "Teams"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "type": "integer",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Seasons Returned"
+          }
+        }
+      }
+    }
   }
 }

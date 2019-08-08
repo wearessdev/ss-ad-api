@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Api::V1::EventsController < Api::BaseController
-  before_action :set_event, except: %i[create]
+  before_action :set_event, except: %i[create index]
 
   # GET /events
   # GET /events.json
@@ -9,8 +11,7 @@ class Api::V1::EventsController < Api::BaseController
 
   # GET /events/1
   # GET /events/1.json
-  def show
-  end
+  def show; end
 
   # POST /events
   # POST /events.json
@@ -18,7 +19,7 @@ class Api::V1::EventsController < Api::BaseController
     @event = Event.new(event_params)
 
     if @event.save
-      render :show, status: :created, location: @event
+      render :show, status: :created
     else
       render json: @event.errors, status: :unprocessable_entity
     end
@@ -28,7 +29,7 @@ class Api::V1::EventsController < Api::BaseController
   # PATCH/PUT /events/1.json
   def update
     if @event.update(event_params)
-      render :show, status: :ok, location: @event
+      render :show, status: :ok
     else
       render json: @event.errors, status: :unprocessable_entity
     end
@@ -37,7 +38,11 @@ class Api::V1::EventsController < Api::BaseController
   # DELETE /events/1
   # DELETE /events/1.json
   def destroy
-    @event.destroy
+    if @event.destroy
+      render :show, status: :ok
+    else
+      render json: @event.errors, status: :unprocessable_entity
+    end
   end
 
   def like
@@ -61,13 +66,15 @@ class Api::V1::EventsController < Api::BaseController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_event
-      @event = Event.find(params[:event_id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def event_params
-      params.require(:event).permit(:name, :description, :date, :location, :like, :love)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_event
+    id = params[:id] || params[:event_id]
+    @event = Event.find(id)
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def event_params
+    params.permit(:name, :school_id, :description, :date, :location, :like, :love)
+  end
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreatePlayers < ActiveRecord::Migration[5.2]
   def change
     create_table :players do |t|
@@ -11,6 +13,7 @@ class CreatePlayers < ActiveRecord::Migration[5.2]
       t.string  :weight
       t.string  :class_name
 
+      t.datetime :deleted_at
       t.timestamps
     end
   end

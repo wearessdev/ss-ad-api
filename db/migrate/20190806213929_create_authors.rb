@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateAuthors < ActiveRecord::Migration[5.2]
   def change
     create_table :authors do |t|
@@ -8,6 +10,7 @@ class CreateAuthors < ActiveRecord::Migration[5.2]
       t.string :image
       t.references :school, foreign_key: true
 
+      t.datetime   :deleted_at
       t.timestamps
     end
   end
