@@ -43,7 +43,8 @@ Event.create([
              ])
 
 Category.create([
-                  { name: "Basketball" }
+                  { name: "Basketball" },
+                  { name: "Football" }
                 ])
 
 Author.create([

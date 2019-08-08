@@ -10,8 +10,11 @@ Rails.application.routes.draw do
       resources :auth
 
       resources :authors
-      resources :categories
       resources :teams
+
+      resources :categories, format: :json do
+        resources :articles
+      end
 
       resources :articles, format: :json, shallow: true do
         resources :images
