@@ -9,8 +9,15 @@ Rails.application.routes.draw do
       resources :users
       resources :auth
 
-      resources :authors
+      resources :articles
       resources :teams
+      resources :events
+
+      resources :schools, format: :json do
+        resources :articles
+        resources :teams
+        resources :events
+      end
 
       resources :categories, format: :json do
         resources :articles

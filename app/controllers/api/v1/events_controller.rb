@@ -6,7 +6,8 @@ class Api::V1::EventsController < Api::BaseController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    @events = Kaminari.paginate_array(Event.all).page(params[:page]).per(8)
+    @total_pages = @events.total_pages
   end
 
   # GET /events/1
@@ -48,21 +49,25 @@ class Api::V1::EventsController < Api::BaseController
   def like
     @event.likes += 1
     @event.save
+    render :feedback, status: :ok
   end
 
   def love
     @event.loves += 1
     @event.save
+    render :feedback, status: :ok
   end
 
   def dislike
     @event.likes -= 1
     @event.save
+    render :feedback, status: :ok
   end
 
   def dislove
     @event.loves -= 1
     @event.save
+    render :feedback, status: :ok
   end
 
   private

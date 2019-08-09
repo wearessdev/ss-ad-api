@@ -56,5 +56,6 @@ Article.create([
                ])
 
 Image.create([
-               { name: "Image 1", caption: "Vince Carter jumping over French dude", file: "path-to-file" }
+               { name: "Image 1", caption: "Vince Carter jumping over French dude", file: "path-to-file", event_id: 1 },
+               { name: "Image 2", caption: "Michael Jordans dunks on Patrick Ewing", file: "path-to-file", article_id: 1 }
              ])

@@ -6,7 +6,8 @@ class Api::V1::ArticlesController < Api::BaseController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    @articles = Kaminari.paginate_array(Article.all).page(params[:page]).per(8)
+    @total_pages = @articles.total_pages
   end
 
   # GET /articles/1
@@ -47,21 +48,25 @@ class Api::V1::ArticlesController < Api::BaseController
   def like
     @article.likes += 1
     @article.save
+    render :feedback, status: :ok
   end
 
   def love
     @article.loves += 1
     @article.save
+    render :feedback, status: :ok
   end
 
   def dislike
     @article.likes -= 1
     @article.save
+    render :feedback, status: :ok
   end
 
   def dislove
     @article.loves -= 1
     @article.save
+    render :feedback, status: :ok
   end
 
   private

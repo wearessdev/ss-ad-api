@@ -30,6 +30,10 @@ gem 'jwt'
 # Needed for pulling up the rails console
 gem 'rb-readline'
 
+# Add some pagination
+gem 'jbuilder_pagination', require: 'jbuilder/pagination'
+gem 'kaminari'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
