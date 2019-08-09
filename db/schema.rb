@@ -10,12 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_06_235355) do
+ActiveRecord::Schema.define(version: 2019_08_09_035224) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
     t.string "name"
-    t.integer "school_id"
-    t.integer "author_id"
+    t.bigint "school_id"
+    t.bigint "author_id"
     t.string "content"
     t.boolean "is_published"
     t.datetime "publish_date"
@@ -29,13 +32,20 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.index ["school_id"], name: "index_articles_on_school_id"
   end
 
+  create_table "articles_categories", id: false, force: :cascade do |t|
+    t.bigint "article_id"
+    t.bigint "category_id"
+    t.index ["article_id"], name: "index_articles_categories_on_article_id"
+    t.index ["category_id"], name: "index_articles_categories_on_category_id"
+  end
+
   create_table "authors", force: :cascade do |t|
     t.string "name"
     t.string "first_name"
     t.string "last_name"
     t.string "email"
     t.string "image"
-    t.integer "school_id"
+    t.bigint "school_id"
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -56,7 +66,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "location"
     t.integer "likes", default: 0
     t.integer "loves", default: 0
-    t.integer "school_id"
+    t.bigint "school_id"
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -71,9 +81,9 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.boolean "win"
     t.boolean "loss"
     t.string "score"
-    t.integer "school_id"
-    t.integer "team_id"
-    t.integer "season_id"
+    t.bigint "school_id"
+    t.bigint "team_id"
+    t.bigint "season_id"
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -89,12 +99,16 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "article_id"
+    t.bigint "event_id"
+    t.index ["article_id"], name: "index_images_on_article_id"
+    t.index ["event_id"], name: "index_images_on_event_id"
   end
 
   create_table "players", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.integer "school_id"
+    t.bigint "school_id"
     t.integer "team_id"
     t.integer "jersey_number"
     t.string "position"
@@ -122,8 +136,8 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
   create_table "seasons", force: :cascade do |t|
     t.integer "year_start"
     t.integer "year_end"
-    t.integer "school_id"
-    t.integer "team_id"
+    t.bigint "school_id"
+    t.bigint "team_id"
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -137,8 +151,8 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.string "title"
     t.string "email"
     t.string "phone"
-    t.integer "school_id"
-    t.integer "team_id"
+    t.bigint "school_id"
+    t.bigint "team_id"
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -148,7 +162,7 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
 
   create_table "teams", force: :cascade do |t|
     t.string "name"
-    t.integer "school_id"
+    t.bigint "school_id"
     t.string "sport"
     t.string "thumbnail"
     t.string "twitter_url"
@@ -180,4 +194,20 @@ ActiveRecord::Schema.define(version: 2019_08_06_235355) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+  add_foreign_key "articles", "authors"
+  add_foreign_key "articles", "schools"
+  add_foreign_key "authors", "schools"
+  add_foreign_key "events", "schools"
+  add_foreign_key "games", "schools"
+  add_foreign_key "games", "seasons"
+  add_foreign_key "games", "teams"
+  add_foreign_key "images", "articles"
+  add_foreign_key "images", "events"
+  add_foreign_key "players", "schools"
+  add_foreign_key "players", "teams"
+  add_foreign_key "seasons", "schools"
+  add_foreign_key "seasons", "teams"
+  add_foreign_key "staffs", "schools"
+  add_foreign_key "staffs", "teams"
+  add_foreign_key "teams", "schools"
 end
