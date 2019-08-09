@@ -10,11 +10,12 @@ class AuthService
   def encode
     payload = {
       user_email: @user.email,
+      school_id: @user.school.id
     }
     JWT.encode(payload, SECRET_KEY)
   end
 
-  def decode(token)
+  def self.decode(token)
     decoded = JWT.decode(token, SECRET_KEY)[0]
     HashWithIndifferentAccess.new decoded
   end
