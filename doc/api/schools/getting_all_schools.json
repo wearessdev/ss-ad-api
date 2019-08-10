@@ -1,9 +1,9 @@
 {
-  "resource": "Teams",
-  "resource_explanation": "Teams Resource",
+  "resource": "Schools",
+  "resource_explanation": "Schools Resource",
   "http_method": "GET",
-  "route": "/api/v1/teams.json",
-  "description": "Getting All Teams",
+  "route": "/api/v1/schools.json",
+  "description": "Getting All Schools",
   "explanation": null,
   "parameters": [
 
@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/teams.json",
+      "request_path": "/api/v1/schools.json",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -30,8 +30,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"4f53cda18c2baa0c0354bb5f9a3ecbe5\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "74e9cbcd-8bac-4c26-a3ef-1bc475f1c4f9",
-        "X-Runtime": "0.007615",
+        "X-Request-Id": "c2e8177d-d04e-44bc-98f3-13d1743538a4",
+        "X-Runtime": "0.006116",
         "Content-Length": "2"
       },
       "response_content_type": "application/json; charset=utf-8",

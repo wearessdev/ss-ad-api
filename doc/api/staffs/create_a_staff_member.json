@@ -1,0 +1,71 @@
+{
+  "resource": "Staffs",
+  "resource_explanation": "Staffs Resource",
+  "http_method": "POST",
+  "route": "/api/v1/teams/:id/staffs.json",
+  "description": "Create a Staff Member",
+  "explanation": null,
+  "parameters": [
+    {
+      "with_example": true,
+      "required": true,
+      "name": "first_name",
+      "description": " first name"
+    },
+    {
+      "with_example": true,
+      "required": true,
+      "name": "last_name",
+      "description": " last name"
+    },
+    {
+      "with_example": true,
+      "required": true,
+      "name": "title",
+      "description": " title"
+    },
+    {
+      "with_example": true,
+      "required": true,
+      "name": "email",
+      "description": " email"
+    },
+    {
+      "with_example": true,
+      "required": true,
+      "name": "phone",
+      "description": " phone"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/teams/307/staffs.json",
+      "request_body": "first_name=Coach&last_name=Test&title=Assistant+Coach+to+the+Assistant&email=testcoach%40testng.com&phone=321-456-7580",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 36,\n  \"first_name\": \"Coach\",\n  \"last_name\": \"Test\",\n  \"title\": \"Assistant Coach to the Assistant\",\n  \"email\": \"testcoach@testng.com\",\n  \"phone\": \"321-456-7580\",\n  \"created_at\": \"2019-08-10T22:30:46.715Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.715Z\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"3fc4753a492f34f95f04a7259e2034d5\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "4fa083ed-1c28-4987-b21b-8579ef987a51",
+        "X-Runtime": "0.006206",
+        "Content-Length": "226"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

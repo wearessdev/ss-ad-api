@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "api/v1/events/129.json",
+      "request_path": "api/v1/events/171.json",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -26,14 +26,14 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 129,\n  \"name\": \"Hipolito Carter\",\n  \"description\": \"This is a description\",\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"location\": \"This is a location\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-10T21:00:31.408Z\",\n  \"updated_at\": \"2019-08-10T21:00:31.408Z\"\n}",
+      "response_body": "{\n  \"id\": 171,\n  \"name\": \"Patti Ortiz\",\n  \"description\": \"This is a description\",\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"location\": \"This is a location\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-10T22:30:46.404Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.404Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"41dd148ee37a4de140ae73a4c599fd6d\"",
+        "ETag": "W/\"d786a1cdf9b741e6786125e032409779\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "f7ec41bd-28f7-4c03-afdb-cff29654c794",
-        "X-Runtime": "0.004891",
-        "Content-Length": "251"
+        "X-Request-Id": "22fc7a5a-3d00-4b6e-9885-c114047bd64c",
+        "X-Runtime": "0.007106",
+        "Content-Length": "247"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

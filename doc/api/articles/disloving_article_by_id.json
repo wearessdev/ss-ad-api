@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "api/v1/articles/192/dislove.json",
+      "request_path": "api/v1/articles/234/dislove.json",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -26,14 +26,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 192,\n  \"name\": \"Mr. Melina Farrell\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 0,\n  \"loves\": -1,\n  \"author\": {\n    \"id\": 208,\n    \"name\": \"Alpha Zboncak\",\n    \"email\": \"wilmer.hudson@braunpfannerstill.biz\",\n    \"image\": \"path-to-image\"\n  }\n}",
+      "response_body": "{\n  \"id\": 234,\n  \"name\": \"Kim Wolff\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 0,\n  \"loves\": -1,\n  \"author\": {\n    \"id\": 251,\n    \"name\": \"Dr. Richard Barrows\",\n    \"email\": \"federico@kleinstark.co\",\n    \"image\": \"path-to-image\"\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"05b4bd0c3810c07b7ab0bd018888c4cf\"",
+        "ETag": "W/\"32044389bfd41d7fd7479cc7f5573d19\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "5cd079c1-c6d4-4ee1-b8c9-eb45857a24da",
-        "X-Runtime": "0.006127",
-        "Content-Length": "234"
+        "X-Request-Id": "6705e261-929d-4be8-a8ed-cf678ba928b3",
+        "X-Runtime": "0.011609",
+        "Content-Length": "218"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

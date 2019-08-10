@@ -49,7 +49,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/articles.json",
-      "request_body": "name=Test+Article&content=Article+Content&is_published=true&publish_date=2009-09-14T08%3A00%3A00%2B00%3A00&school_id=572&author_id=202",
+      "request_body": "name=Test+Article&content=Article+Content&is_published=true&publish_date=2009-09-14T08%3A00%3A00%2B00%3A00&school_id=1467&author_id=245",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -60,14 +60,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 186,\n  \"name\": \"Test Article\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 202,\n    \"name\": \"Mr. Leslee Aufderhar\",\n    \"email\": \"kent_lakin@white.io\",\n    \"image\": \"path-to-image\"\n  },\n  \"categories\": [\n\n  ],\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-10T21:00:31.239Z\",\n  \"updated_at\": \"2019-08-10T21:00:31.239Z\",\n  \"content\": \"Article Content\"\n}",
+      "response_body": "{\n  \"id\": 228,\n  \"name\": \"Test Article\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 245,\n    \"name\": \"Ronny Labadie\",\n    \"email\": \"wilfred_terry@hegmannlemke.net\",\n    \"image\": \"path-to-image\"\n  },\n  \"categories\": [\n\n  ],\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-10T22:30:46.162Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.162Z\",\n  \"content\": \"Article Content\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"117373bb3dfe1e05e38ebbf63e9682a2\"",
+        "ETag": "W/\"e11f7531e5dc1e114be8f072efbcd3f7\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "82f359d6-97a5-4a95-bdf9-c740f69e3bf8",
-        "X-Runtime": "0.045756",
-        "Content-Length": "354"
+        "X-Request-Id": "e9506c99-1e97-477e-97f1-00e765b95593",
+        "X-Runtime": "0.055023",
+        "Content-Length": "358"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

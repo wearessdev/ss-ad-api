@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/teams/184/seasons.json",
+      "request_path": "/api/v1/teams/314/seasons.json",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -26,14 +26,14 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n\n]",
+      "response_body": "[\n  {\n    \"id\": 71,\n    \"year_start\": 2019,\n    \"year_end\": 2020,\n    \"created_at\": \"2019-08-10T22:30:46.873Z\",\n    \"updated_at\": \"2019-08-10T22:30:46.873Z\"\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"4f53cda18c2baa0c0354bb5f9a3ecbe5\"",
+        "ETag": "W/\"54adb53c5397839f46f246521d975575\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "fb146b32-10ef-46ed-9831-eb93d28a3c33",
-        "X-Runtime": "0.006229",
-        "Content-Length": "2"
+        "X-Request-Id": "93fc1d87-4b8a-4185-8f26-4b469f6a3d8c",
+        "X-Runtime": "0.010275",
+        "Content-Length": "125"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

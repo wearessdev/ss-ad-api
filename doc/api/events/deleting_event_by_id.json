@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "api/v1/events/130.json",
+      "request_path": "api/v1/events/172.json",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -26,13 +26,13 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 130,\n  \"name\": \"Mrs. Jannet Kihn\",\n  \"description\": \"This is a description\",\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"location\": \"This is a location\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-10T21:00:31.419Z\",\n  \"updated_at\": \"2019-08-10T21:00:31.423Z\",\n  \"deleted_at\": \"2019-08-10T21:00:31.423Z\"\n}",
+      "response_body": "{\n  \"id\": 172,\n  \"name\": \"Dr. Erik Flatley\",\n  \"description\": \"This is a description\",\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"location\": \"This is a location\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-10T22:30:46.422Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.427Z\",\n  \"deleted_at\": \"2019-08-10T22:30:46.427Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"eea247cbb4a5d9926dcf8b6b22d468db\"",
+        "ETag": "W/\"c358d343b75064018e4ed832fc00335a\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "57ec1605-70f1-4dbe-8cd3-809ffa4f2a91",
-        "X-Runtime": "0.005045",
+        "X-Request-Id": "6c7e6216-e1b0-423f-a1bf-f987461dff7f",
+        "X-Runtime": "0.008168",
         "Content-Length": "292"
       },
       "response_content_type": "application/json; charset=utf-8",

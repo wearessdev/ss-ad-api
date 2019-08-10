@@ -1,9 +1,9 @@
 {
-  "resource": "Teams",
-  "resource_explanation": "Teams Resource",
+  "resource": "Users",
+  "resource_explanation": "Users Resource",
   "http_method": "GET",
-  "route": "/api/v1/teams.json",
-  "description": "Getting All Teams",
+  "route": "/api/v1/users.json",
+  "description": "Getting All Users",
   "explanation": null,
   "parameters": [
 
@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/teams.json",
+      "request_path": "/api/v1/users.json",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -30,8 +30,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"4f53cda18c2baa0c0354bb5f9a3ecbe5\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "74e9cbcd-8bac-4c26-a3ef-1bc475f1c4f9",
-        "X-Runtime": "0.007615",
+        "X-Request-Id": "983c6a33-793f-40bf-b383-54152a388ba7",
+        "X-Runtime": "0.005197",
         "Content-Length": "2"
       },
       "response_content_type": "application/json; charset=utf-8",

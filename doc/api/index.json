@@ -134,6 +134,67 @@
           "groups": "all",
           "route": "/api/v1/teams/:id/games.json",
           "method": "post"
+        },
+        {
+          "description": "Getting Game by ID",
+          "link": "games/getting_game_by_id.json",
+          "groups": "all",
+          "route": "/api/v1/games/:id.json",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Schools",
+      "explanation": "Schools Resource",
+      "examples": [
+        {
+          "description": "Create a School",
+          "link": "schools/create_a_school.json",
+          "groups": "all",
+          "route": "/api/v1/schools.json",
+          "method": "post"
+        },
+        {
+          "description": "Delete School by ID",
+          "link": "schools/delete_school_by_id.json",
+          "groups": "all",
+          "route": "/api/v1/schools/:id.json",
+          "method": "delete"
+        },
+        {
+          "description": "Getting All Schools",
+          "link": "schools/getting_all_schools.json",
+          "groups": "all",
+          "route": "/api/v1/schools.json",
+          "method": "get"
+        },
+        {
+          "description": "Getting Staff Member by ID",
+          "link": "schools/getting_staff_member_by_id.json",
+          "groups": "all",
+          "route": "/api/v1/schools/:id.json",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Staffs",
+      "explanation": "Staffs Resource",
+      "examples": [
+        {
+          "description": "Create a Staff Member",
+          "link": "staffs/create_a_staff_member.json",
+          "groups": "all",
+          "route": "/api/v1/teams/:id/staffs.json",
+          "method": "post"
+        },
+        {
+          "description": "Getting Staff Member by ID",
+          "link": "staffs/getting_staff_member_by_id.json",
+          "groups": "all",
+          "route": "/api/v1/staffs/:id.json",
+          "method": "get"
         }
       ]
     },
@@ -195,6 +256,40 @@
           "link": "teams/returning_staff_members_on_team.json",
           "groups": "all",
           "route": "/api/v1/teams/:id/staffs.json",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "explanation": "Users Resource",
+      "examples": [
+        {
+          "description": "Create a User",
+          "link": "users/create_a_user.json",
+          "groups": "all",
+          "route": "/api/v1/users.json",
+          "method": "post"
+        },
+        {
+          "description": "Delete User by ID",
+          "link": "users/delete_user_by_id.json",
+          "groups": "all",
+          "route": "/api/v1/users/:id.json",
+          "method": "delete"
+        },
+        {
+          "description": "Getting All Users",
+          "link": "users/getting_all_users.json",
+          "groups": "all",
+          "route": "/api/v1/users.json",
+          "method": "get"
+        },
+        {
+          "description": "Getting User by ID",
+          "link": "users/getting_user_by_id.json",
+          "groups": "all",
+          "route": "/api/v1/users/:id.json",
           "method": "get"
         }
       ]

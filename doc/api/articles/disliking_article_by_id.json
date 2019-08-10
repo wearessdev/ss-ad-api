@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "api/v1/articles/191/dislike.json",
+      "request_path": "api/v1/articles/233/dislike.json",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -26,14 +26,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 191,\n  \"name\": \"Kareen Daniel\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": -1,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 207,\n    \"name\": \"Miss Ethelene Morar\",\n    \"email\": \"veola_streich@waltercrist.io\",\n    \"image\": \"path-to-image\"\n  }\n}",
+      "response_body": "{\n  \"id\": 233,\n  \"name\": \"Valrie Abbott\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": -1,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 250,\n    \"name\": \"Shirley Runolfsson\",\n    \"email\": \"edie@parker.net\",\n    \"image\": \"path-to-image\"\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"88cc72bf05a9008b1901564c9379091d\"",
+        "ETag": "W/\"e3e5959908d1a22b89aea897d62fe1ff\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "06ec9c82-f800-4116-9f88-f44c1378c07e",
-        "X-Runtime": "0.006769",
-        "Content-Length": "228"
+        "X-Request-Id": "c151d100-915c-4a0c-b377-4271a44512bc",
+        "X-Runtime": "0.011236",
+        "Content-Length": "214"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

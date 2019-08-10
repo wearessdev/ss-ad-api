@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "api/v1/articles/187.json",
+      "request_path": "api/v1/articles/229.json",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -26,14 +26,14 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 187,\n  \"name\": \"Edmund Larson DVM\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 203,\n    \"name\": \"Miss Young Kessler\",\n    \"email\": \"todd@kaulkekertzmann.name\",\n    \"image\": \"path-to-image\"\n  },\n  \"categories\": [\n\n  ],\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-10T21:00:31.274Z\",\n  \"updated_at\": \"2019-08-10T21:00:31.274Z\",\n  \"content\": \"This is content\"\n}",
+      "response_body": "{\n  \"id\": 229,\n  \"name\": \"Miss Alaina Lueilwitz\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 246,\n    \"name\": \"Miss Johnson Feeney\",\n    \"email\": \"ismael@gaylord.org\",\n    \"image\": \"path-to-image\"\n  },\n  \"categories\": [\n\n  ],\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-10T22:30:46.207Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.207Z\",\n  \"content\": \"This is content\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"100ad4ef5444be4bb3bd5ece02fe6c56\"",
+        "ETag": "W/\"57c52262ba0938ecf067c63576a71b1f\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "3200d12f-dec2-40a9-a578-2e332d29065c",
-        "X-Runtime": "0.007084",
-        "Content-Length": "363"
+        "X-Request-Id": "d021082e-d772-4e5c-b3d0-d01cd784a427",
+        "X-Runtime": "0.007994",
+        "Content-Length": "361"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

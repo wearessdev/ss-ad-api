@@ -1,0 +1,42 @@
+{
+  "resource": "Schools",
+  "resource_explanation": "Schools Resource",
+  "http_method": "DELETE",
+  "route": "/api/v1/schools/:id.json",
+  "description": "Delete School by ID",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/api/v1/schools/1486.json",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 1486,\n  \"name\": \"Jude Hammes\",\n  \"address\": \"65214 Carmen Parkway\",\n  \"city\": \"Braunhaven\",\n  \"state\": \"MD\",\n  \"zip\": 39157,\n  \"created_at\": \"2019-08-10T22:30:46.653Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.658Z\",\n  \"deleted_at\": \"2019-08-10T22:30:46.658Z\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"f015123e73253b98a0a17c93083eb475\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "da4844d7-31d4-46ae-8c0f-d3ca854fafdf",
+        "X-Runtime": "0.006001",
+        "Content-Length": "230"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
