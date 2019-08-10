@@ -1,12 +1,12 @@
+# frozen_string_literal: true
+
 class Api::V1::UsersController < Api::BaseController
+  skip_before_action :authenticate_user, only: %i[create]
   before_action :set_user, only: %i[show update destroy]
-  # skip_before_action :authenticate_user, only: %i[create show index]
 
   # GET /users
   def index
     @users = User.all
-
-    # render json: @users
   end
 
   # GET /users/1
@@ -18,7 +18,7 @@ class Api::V1::UsersController < Api::BaseController
     @user.token = Token.new.new_token(@user, AuthService.new(@user).encode)
 
     if @user.save
-      render json: @user, status: :created
+      render :show, status: :created
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -27,7 +27,7 @@ class Api::V1::UsersController < Api::BaseController
   # PATCH/PUT /users/1
   def update
     if @user.update(user_params)
-      render json: @user
+      render :show
     else
       render json: @user.errors, status: :unprocessable_entity
     end
@@ -47,6 +47,6 @@ class Api::V1::UsersController < Api::BaseController
 
   # Only allow a trusted parameter "white list" through.
   def user_params
-    params.permit(:email, :password, :password_confirmation, :name)
+    params.permit(:email, :password, :password_confirmation, :name, :school_id)
   end
 end
