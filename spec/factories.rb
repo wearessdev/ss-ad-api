@@ -9,6 +9,19 @@ FactoryGirl.define do
     zip     39157
   end
 
+  factory :token do
+    token "This is a token"
+    user  { FactoryGirl.create(:user) }
+  end
+
+  factory :user do
+    name      { Faker::Name.name }
+    email     { Faker::Internet.email }
+    password  "This is a long password"
+    school    { FactoryGirl.create(:school) }
+    token     nil
+  end
+
   factory :author do
     name     { Faker::Name.name }
     email    { Faker::Internet.email }
@@ -46,5 +59,42 @@ FactoryGirl.define do
     loves           0
     location        "This is a location"
     school          { FactoryGirl.create(:school) }
+  end
+
+  factory :player do
+    first_name        { Faker::Name.first_name }
+    last_name         { Faker::Name.last_name }
+    team              { FactoryGirl.create(:team) }
+    jersey_number     33
+    position          "SG"
+    height            "5'11"
+    weight            "185"
+    class_name        "Junior"
+  end
+
+  factory :staff do
+    first_name        { Faker::Name.first_name }
+    last_name         { Faker::Name.last_name }
+    team              { FactoryGirl.create(:team) }
+    title             "Assistant Coach to the Assistant"
+    email             { Faker::Internet.email }
+    phone             { Faker::PhoneNumber.phone_number }
+  end
+
+  factory :season do
+    year_start   "2019"
+    year_end     "2020"
+    team         { FactoryGirl.create(:team) }
+  end
+
+  factory :game do
+    date            DateTime.strptime("09/14/2009 8:00", "%m/%d/%Y %H:%M")
+    opponent        "The Other Guys"
+    location        "Our House"
+    home_away       "home"
+    win             true
+    loss            false
+    score           "30-15"
+    season          { FactoryGirl.create(:season) }
   end
 end

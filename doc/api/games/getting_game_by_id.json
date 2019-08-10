@@ -1,0 +1,41 @@
+{
+  "resource": "Games",
+  "resource_explanation": "Games Resource",
+  "http_method": "GET",
+  "route": "/api/v1/games/:id.json",
+  "description": "Getting Game by ID",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/games/50.json",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 50,\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"opponent\": \"The Other Guys\",\n  \"location\": \"Our House\",\n  \"home_away\": \"home\",\n  \"win\": true,\n  \"loss\": false,\n  \"score\": \"30-15\",\n  \"school_id\": 1482,\n  \"team_id\": 304,\n  \"season_id\": 68\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"50a571e69e6510e62cb2c0c8cdea8e11\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "ad1729f0-2116-4d77-821e-843ed0aeb56c",
+        "X-Runtime": "0.010855",
+        "Content-Length": "199"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "resource": "Articles",
+  "resource_explanation": "Articles Resource",
+  "http_method": "PATCH",
+  "route": "api/v1/articles/:id/love.json",
+  "description": "Loving Article By ID",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PATCH",
+      "request_path": "api/v1/articles/232/love.json",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 232,\n  \"name\": \"Marcela Langosh\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 0,\n  \"loves\": 1,\n  \"author\": {\n    \"id\": 249,\n    \"name\": \"Georgeanna Hessel\",\n    \"email\": \"luetta@sipesanderson.biz\",\n    \"image\": \"path-to-image\"\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"022eb83ecfee36457d4a93424046e1f2\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "bcded068-6bad-45bd-9aa2-0d2f3c228751",
+        "X-Runtime": "0.010260",
+        "Content-Length": "223"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

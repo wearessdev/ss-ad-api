@@ -10,7 +10,7 @@ class AuthService
   def encode
     payload = {
       user_email: @user.email,
-      school_id: @user.school.id
+      school_id: @user.school_id
     }
     JWT.encode(payload, SECRET_KEY)
   end

@@ -1,0 +1,98 @@
+{
+  "resource": "Games",
+  "resource_explanation": "Games Resource",
+  "http_method": "POST",
+  "route": "/api/v1/teams/:id/games.json",
+  "description": "Create a Game",
+  "explanation": null,
+  "parameters": [
+    {
+      "with_example": true,
+      "required": true,
+      "name": "date",
+      "description": " date"
+    },
+    {
+      "with_example": true,
+      "required": true,
+      "name": "opponent",
+      "description": " opponent"
+    },
+    {
+      "with_example": true,
+      "required": true,
+      "name": "location",
+      "description": " location"
+    },
+    {
+      "with_example": true,
+      "required": true,
+      "name": "home_away",
+      "description": " home away"
+    },
+    {
+      "with_example": true,
+      "name": "win",
+      "description": " win"
+    },
+    {
+      "with_example": true,
+      "name": "loss",
+      "description": " loss"
+    },
+    {
+      "with_example": true,
+      "name": "score",
+      "description": " score"
+    },
+    {
+      "with_example": true,
+      "required": true,
+      "name": "school_id",
+      "description": " school"
+    },
+    {
+      "with_example": true,
+      "required": true,
+      "name": "team_id",
+      "description": " team"
+    },
+    {
+      "with_example": true,
+      "required": true,
+      "name": "season_id",
+      "description": " season"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/teams/305/games.json",
+      "request_body": "date=2009-09-14T08%3A00%3A00%2B00%3A00&opponent=The+Other+Guys&location=Our+House&home_away=home&win=true&loss=false&score=50-10&school_id&team_id=305&season_id=69",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 51,\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"opponent\": \"The Other Guys\",\n  \"location\": \"Our House\",\n  \"home_away\": \"home\",\n  \"win\": true,\n  \"loss\": false,\n  \"score\": \"50-10\",\n  \"school_id\": 1483,\n  \"team_id\": 305,\n  \"season_id\": 69\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"81e727f8489d12fed05447bcfb347521\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "0b658304-c072-4c1a-a9ef-cc213de0187b",
+        "X-Runtime": "0.009528",
+        "Content-Length": "199"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

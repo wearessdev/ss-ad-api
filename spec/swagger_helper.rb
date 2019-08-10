@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.configure do |config|
@@ -5,6 +7,7 @@ RSpec.configure do |config|
   # NOTE: If you're using the rswag-api to serve API descriptions, you'll need
   # to ensure that it's configured to serve Swagger from the same folder
   config.swagger_root = Rails.root.to_s + '/swagger'
+  config.swagger_dry_run = false
 
   # Define one or more Swagger documents and provide global metadata for each one
   # When you run the 'rswag:specs:to_swagger' rake task, the complete Swagger will

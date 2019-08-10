@@ -55,6 +55,6 @@ class Api::V1::TeamsController < Api::BaseController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def team_params
-    params.permit(:name, :thumbnail, :twitter_url, :facebook_url, :instagram_url)
+    params.permit(:name, :school_id, :thumbnail, :twitter_url, :facebook_url, :instagram_url)
   end
 end

@@ -2,6 +2,6 @@
 
 json.total_pages @total_pages
 
-json.events do
-  json.array! @article, partial: "article", as: :event, short_version: true
+json.articles do
+  json.array! @article, partial: "article", as: :article, short_version: true
 end

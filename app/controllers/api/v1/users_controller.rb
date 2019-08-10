@@ -35,7 +35,11 @@ class Api::V1::UsersController < Api::BaseController
 
   # DELETE /users/1
   def destroy
-    @user.destroy
+    if @user.destroy
+      render :show, status: :ok
+    else
+      render json: @user.errors, status: :unprocessable_entity
+    end
   end
 
   private

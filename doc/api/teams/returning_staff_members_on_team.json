@@ -1,0 +1,42 @@
+{
+  "resource": "Teams",
+  "resource_explanation": "Teams Resource",
+  "http_method": "GET",
+  "route": "/api/v1/teams/:id/staffs.json",
+  "description": "Returning Staff Members on Team",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/teams/312/staffs.json",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 37,\n    \"first_name\": \"Tomasa\",\n    \"last_name\": \"Morar\",\n    \"title\": \"Assistant Coach to the Assistant\",\n    \"email\": \"ahmad@prosacco.net\",\n    \"phone\": \"457.346.8937\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"28d211a3b722f166a9de8906a0612bbc\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "46dc1cbf-449a-4db3-9fce-cf7ca523c0cc",
+        "X-Runtime": "0.007936",
+        "Content-Length": "148"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

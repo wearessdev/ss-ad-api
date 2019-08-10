@@ -1,0 +1,42 @@
+{
+  "resource": "Teams",
+  "resource_explanation": "Teams Resource",
+  "http_method": "GET",
+  "route": "/api/v1/teams/:id/players.json",
+  "description": "Returning Players on Team",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/teams/311/players.json",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 10,\n    \"first_name\": \"Marlene\",\n    \"last_name\": \"Schaefer\",\n    \"jersey_number\": 33,\n    \"position\": \"SG\",\n    \"height\": \"5'11\",\n    \"weight\": \"185\",\n    \"class_name\": \"Junior\",\n    \"created_at\": \"2019-08-10T22:30:46.803Z\",\n    \"updated_at\": \"2019-08-10T22:30:46.803Z\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"53af0021d51e4ad35473b4773af57bf6\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "1582cc4a-ebcf-4176-a740-7bc4987d3ecc",
+        "X-Runtime": "0.009075",
+        "Content-Length": "225"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
