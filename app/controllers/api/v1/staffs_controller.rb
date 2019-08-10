@@ -19,7 +19,7 @@ class Api::V1::StaffsController < Api::BaseController
     @staff = Staff.new(staff_params)
 
     if @staff.save
-      render :show, status: :created, location: @staff
+      render :show, status: :created
     else
       render json: @staff.errors, status: :unprocessable_entity
     end
@@ -29,7 +29,7 @@ class Api::V1::StaffsController < Api::BaseController
   # PATCH/PUT /staffs/1.json
   def update
     if @staff.update(staff_params)
-      render :show, status: :ok, location: @staff
+      render :show, status: :ok
     else
       render json: @staff.errors, status: :unprocessable_entity
     end
@@ -50,6 +50,6 @@ class Api::V1::StaffsController < Api::BaseController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def staff_params
-    params.permit(:first_name, :last_name, :title, :email, :phone)
+    params.permit(:first_name, :last_name, :title, :email, :phone, :team_id)
   end
 end

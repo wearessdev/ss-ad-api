@@ -1,0 +1,42 @@
+{
+  "resource": "Articles",
+  "resource_explanation": "Articles Resource",
+  "http_method": "PATCH",
+  "route": "api/v1/articles/:id/love.json",
+  "description": "Loving Article By ID",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PATCH",
+      "request_path": "api/v1/articles/190/love.json",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 190,\n  \"name\": \"Reyes Dickens\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 0,\n  \"loves\": 1,\n  \"author\": {\n    \"id\": 206,\n    \"name\": \"Miss Raguel Bergnaum\",\n    \"email\": \"christia@durgan.io\",\n    \"image\": \"path-to-image\"\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"73ce6cf4673131b27299689d8242b291\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "e9873924-8446-4645-ad58-d48443a791ca",
+        "X-Runtime": "0.006294",
+        "Content-Length": "218"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

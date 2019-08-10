@@ -36,7 +36,11 @@ class Api::V1::SchoolsController < Api::BaseController
   # DELETE /schools/1
   # DELETE /schools/1.json
   def destroy
-    @school.destroy
+    if @school.destroy
+      render :show, status: :ok
+    else
+      render json: @school.errors, status: :unprocessable_entity
+    end
   end
 
   private

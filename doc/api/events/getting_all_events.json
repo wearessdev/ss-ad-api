@@ -1,0 +1,41 @@
+{
+  "resource": "Events",
+  "resource_explanation": "Events Resource",
+  "http_method": "GET",
+  "route": "/api/v1/events.json",
+  "description": "Getting All Events",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/events.json",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"total_pages\": 0,\n  \"events\": [\n\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"1174331d0955c294130dd30cba1ff75d\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "3249a257-bbd7-4dde-b2db-8c9b3b2ed33d",
+        "X-Runtime": "0.010890",
+        "Content-Length": "29"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

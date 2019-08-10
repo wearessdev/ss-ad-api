@@ -1,0 +1,42 @@
+{
+  "resource": "Teams",
+  "resource_explanation": "Teams Resource",
+  "http_method": "GET",
+  "route": "/api/v1/teams/:id/players.json",
+  "description": "Returning Players on Team",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/teams/181/players.json",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"4f53cda18c2baa0c0354bb5f9a3ecbe5\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "92e25e1c-d363-49f5-b674-4415cf0ec655",
+        "X-Runtime": "0.011370",
+        "Content-Length": "2"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "resources": [
+    {
+      "name": "Articles",
+      "explanation": "Articles Resource",
+      "examples": [
+        {
+          "description": "Create an Article",
+          "link": "articles/create_an_article.json",
+          "groups": "all",
+          "route": "/api/v1/articles.json",
+          "method": "post"
+        },
+        {
+          "description": "Deleting Article By ID",
+          "link": "articles/deleting_article_by_id.json",
+          "groups": "all",
+          "route": "api/v1/articles/:id.json",
+          "method": "delete"
+        },
+        {
+          "description": "Disliking Article By ID",
+          "link": "articles/disliking_article_by_id.json",
+          "groups": "all",
+          "route": "api/v1/articles/:id/dislike.json",
+          "method": "patch"
+        },
+        {
+          "description": "Disloving Article By ID",
+          "link": "articles/disloving_article_by_id.json",
+          "groups": "all",
+          "route": "api/v1/articles/:id/dislove.json",
+          "method": "patch"
+        },
+        {
+          "description": "Getting All Articles",
+          "link": "articles/getting_all_articles.json",
+          "groups": "all",
+          "route": "/api/v1/articles.json",
+          "method": "get"
+        },
+        {
+          "description": "Getting Article By ID",
+          "link": "articles/getting_article_by_id.json",
+          "groups": "all",
+          "route": "api/v1/articles/:id.json",
+          "method": "get"
+        },
+        {
+          "description": "Liking Article By ID",
+          "link": "articles/liking_article_by_id.json",
+          "groups": "all",
+          "route": "api/v1/articles/:id/like.json",
+          "method": "patch"
+        },
+        {
+          "description": "Loving Article By ID",
+          "link": "articles/loving_article_by_id.json",
+          "groups": "all",
+          "route": "api/v1/articles/:id/love.json",
+          "method": "patch"
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "explanation": "Events Resource",
+      "examples": [
+        {
+          "description": "Create an Event",
+          "link": "events/create_an_event.json",
+          "groups": "all",
+          "route": "/api/v1/events.json",
+          "method": "post"
+        },
+        {
+          "description": "Deleting Event By ID",
+          "link": "events/deleting_event_by_id.json",
+          "groups": "all",
+          "route": "api/v1/events/:id.json",
+          "method": "delete"
+        },
+        {
+          "description": "Disliking Event By ID",
+          "link": "events/disliking_event_by_id.json",
+          "groups": "all",
+          "route": "api/v1/events/:id/dislike.json",
+          "method": "patch"
+        },
+        {
+          "description": "Disloving Event By ID",
+          "link": "events/disloving_event_by_id.json",
+          "groups": "all",
+          "route": "api/v1/events/:id/dislove.json",
+          "method": "patch"
+        },
+        {
+          "description": "Getting All Events",
+          "link": "events/getting_all_events.json",
+          "groups": "all",
+          "route": "/api/v1/events.json",
+          "method": "get"
+        },
+        {
+          "description": "Getting Event By ID",
+          "link": "events/getting_event_by_id.json",
+          "groups": "all",
+          "route": "api/v1/events/:id.json",
+          "method": "get"
+        },
+        {
+          "description": "Liking Event By ID",
+          "link": "events/liking_event_by_id.json",
+          "groups": "all",
+          "route": "api/v1/events/:id/like.json",
+          "method": "patch"
+        },
+        {
+          "description": "Loving Event By ID",
+          "link": "events/loving_event_by_id.json",
+          "groups": "all",
+          "route": "api/v1/events/:id/love.json",
+          "method": "patch"
+        }
+      ]
+    },
+    {
+      "name": "Games",
+      "explanation": "Games Resource",
+      "examples": [
+        {
+          "description": "Create a Game",
+          "link": "games/create_a_game.json",
+          "groups": "all",
+          "route": "/api/v1/teams/:id/games.json",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Teams",
+      "explanation": "Teams Resource",
+      "examples": [
+        {
+          "description": "Create a Team",
+          "link": "teams/create_a_team.json",
+          "groups": "all",
+          "route": "/api/v1/teams.json",
+          "method": "post"
+        },
+        {
+          "description": "Deleting Team By ID",
+          "link": "teams/deleting_team_by_id.json",
+          "groups": "all",
+          "route": "/api/v1/teams/:id.json",
+          "method": "delete"
+        },
+        {
+          "description": "Getting All Teams",
+          "link": "teams/getting_all_teams.json",
+          "groups": "all",
+          "route": "/api/v1/teams.json",
+          "method": "get"
+        },
+        {
+          "description": "Getting Team By ID",
+          "link": "teams/getting_team_by_id.json",
+          "groups": "all",
+          "route": "/api/v1/teams/:id.json",
+          "method": "get"
+        },
+        {
+          "description": "Returning Games for Team",
+          "link": "teams/returning_games_for_team.json",
+          "groups": "all",
+          "route": "/api/v1/teams/:id/games.json",
+          "method": "get"
+        },
+        {
+          "description": "Returning Players on Team",
+          "link": "teams/returning_players_on_team.json",
+          "groups": "all",
+          "route": "/api/v1/teams/:id/players.json",
+          "method": "get"
+        },
+        {
+          "description": "Returning Seasons for Team",
+          "link": "teams/returning_seasons_for_team.json",
+          "groups": "all",
+          "route": "/api/v1/teams/:id/seasons.json",
+          "method": "get"
+        },
+        {
+          "description": "Returning Staff Members on Team",
+          "link": "teams/returning_staff_members_on_team.json",
+          "groups": "all",
+          "route": "/api/v1/teams/:id/staffs.json",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}

@@ -67,7 +67,15 @@
         ],
         "responses": {
           "200": {
-            "description": "articles returned"
+            "description": "articles returned",
+            "examples": {
+              "application/json": {
+                "total_pages": 0,
+                "events": [
+
+                ]
+              }
+            }
           }
         }
       }

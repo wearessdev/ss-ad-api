@@ -3,7 +3,8 @@
 json.id           event.id
 json.name         event.name
 json.description  event.description
-json.date         event.location
+json.date         event.date
+json.location     event.location
 json.likes        event.likes
 json.loves        event.loves
 json.images       event.images do |image|

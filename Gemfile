@@ -51,6 +51,7 @@ gem 'faker'
 
 # Helps with building swagger--API docs
 gem 'rspec_api_documentation'
+gem "apitome"
 gem 'rswag'
 
 # Soft delete all(most) of the things

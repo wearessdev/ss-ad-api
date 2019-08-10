@@ -1,0 +1,42 @@
+{
+  "resource": "Articles",
+  "resource_explanation": "Articles Resource",
+  "http_method": "PATCH",
+  "route": "api/v1/articles/:id/like.json",
+  "description": "Liking Article By ID",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PATCH",
+      "request_path": "api/v1/articles/189/like.json",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 189,\n  \"name\": \"Randi Yundt\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 1,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 205,\n    \"name\": \"Bill Veum MD\",\n    \"email\": \"lynsey@stehrauer.org\",\n    \"image\": \"path-to-image\"\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"b64543880e5af70de4814d8f4881dae3\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "9c6afb71-3c31-47ee-b55c-667819b81b16",
+        "X-Runtime": "0.010005",
+        "Content-Length": "210"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
