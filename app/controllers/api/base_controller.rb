@@ -5,7 +5,7 @@ class Api::BaseController < ApplicationController
   before_action :authenticate_user
 
   def authenticate_user
-    return if request.headers['Authorization'] == 'go-on'
+    return if request.headers['Authorization'] == ENV["PASS_KEY"]
 
     header = request.headers['Authorization']
     type = header.split(' ').first if header
