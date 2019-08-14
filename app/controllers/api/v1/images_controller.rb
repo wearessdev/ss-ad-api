@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Api::V1::ImagesController < ApplicationController
   before_action :set_image, only: %i[show update destroy]
 
@@ -15,19 +17,23 @@ class Api::V1::ImagesController < ApplicationController
   # POST /images.json
   def create
     @image = Image.new(image_params)
+    file = @image.convert_to_file(
+      school_id: 1,
+      name: params[:name],
+      file: params[:file]
+    )
+
+    object = @image.article || @image.event
+
+    object.images.attach(
+      io: File.open(file[:path]),
+      filename: file[:file_name]
+    )
+
+    @image.file = url_for(object.images.last)
 
     if @image.save
-      render :show, status: :created, location: @image
-    else
-      render json: @image.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /images/1
-  # PATCH/PUT /images/1.json
-  def update
-    if @image.update(image_params)
-      render :show, status: :ok, location: @image
+      render :show, status: :created
     else
       render json: @image.errors, status: :unprocessable_entity
     end

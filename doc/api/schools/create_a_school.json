@@ -55,14 +55,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 1485,\n  \"name\": \"Callaway High School\",\n  \"address\": \"Somewhere In Jackson MS\",\n  \"city\": \"Jackson\",\n  \"state\": \"MS\",\n  \"zip\": 39206,\n  \"created_at\": \"2019-08-10T22:30:46.633Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.633Z\"\n}",
+      "response_body": "{\n  \"id\": 95,\n  \"name\": \"Callaway High School\",\n  \"address\": \"Somewhere In Jackson MS\",\n  \"city\": \"Jackson\",\n  \"state\": \"MS\",\n  \"zip\": 39206,\n  \"created_at\": \"2019-08-14T22:36:45.338Z\",\n  \"updated_at\": \"2019-08-14T22:36:45.338Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"9f6465e35684c9790e7f5abdb4d466c9\"",
+        "ETag": "W/\"808038d8a0324c513aa7fcb2d1202da4\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "327c6752-e061-4c43-9f4a-f389f5f0af8f",
-        "X-Runtime": "0.008572",
-        "Content-Length": "199"
+        "X-Request-Id": "e7fe7abc-a472-4bb1-bcad-78ba9f07ff72",
+        "X-Runtime": "0.007794",
+        "Content-Length": "197"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
