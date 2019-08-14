@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/teams/313/games.json",
+      "request_path": "/api/v1/teams/10/games.json",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -26,14 +26,14 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"total_pages\": 1,\n  \"games\": [\n    {\n      \"id\": 52,\n      \"date\": \"2009-09-14T08:00:00.000Z\",\n      \"opponent\": \"The Other Guys\",\n      \"location\": \"Our House\",\n      \"home_away\": \"home\"\n    }\n  ]\n}",
+      "response_body": "{\n  \"total_pages\": 1,\n  \"games\": [\n    {\n      \"id\": 3,\n      \"date\": \"2009-09-14T08:00:00.000Z\",\n      \"opponent\": \"The Other Guys\",\n      \"location\": \"Our House\",\n      \"home_away\": \"home\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"36a0ce3c42c7a99073754085685e1fc8\"",
+        "ETag": "W/\"33b78bbe3f9d8ce40f2946a7247b9cbb\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "961bbdbd-d13b-4283-8968-7cdd90b80713",
-        "X-Runtime": "0.008108",
-        "Content-Length": "141"
+        "X-Request-Id": "a80c1b0a-7624-47f1-a2e0-3d18d44e3bce",
+        "X-Runtime": "0.008168",
+        "Content-Length": "140"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

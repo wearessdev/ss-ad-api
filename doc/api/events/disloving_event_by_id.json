@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "api/v1/events/176/dislove.json",
+      "request_path": "api/v1/events/7/dislove.json",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -26,14 +26,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 176,\n  \"name\": \"Mr. Lester Cassin\",\n  \"description\": \"This is a description\",\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"location\": \"This is a location\",\n  \"likes\": 0,\n  \"loves\": -1,\n  \"images\": [\n\n  ]\n}",
+      "response_body": "{\n  \"id\": 7,\n  \"name\": \"Merrill Willms\",\n  \"description\": \"This is a description\",\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"location\": \"This is a location\",\n  \"likes\": 0,\n  \"loves\": -1,\n  \"images\": [\n\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"89b37966d906b1ff91853d1ffd4947a4\"",
+        "ETag": "W/\"769f52a1260e7c56c44eb044664076c8\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "1e8b92db-afe1-4f79-b9cb-07d08a44dffa",
-        "X-Runtime": "0.008258",
-        "Content-Length": "174"
+        "X-Request-Id": "81197027-1c56-4c10-a38f-f963dbafaf5f",
+        "X-Runtime": "0.007499",
+        "Content-Length": "169"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

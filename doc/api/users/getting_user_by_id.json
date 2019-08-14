@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/users/23.json",
+      "request_path": "/api/v1/users/1.json",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -25,14 +25,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 23,\n  \"name\": \"Lin Waters\",\n  \"email\": \"paz.botsford@simonis.co\",\n  \"auth\": \"token This is a token\",\n  \"school\": {\n    \"id\": 1496,\n    \"name\": \"Lynnette Bins\",\n    \"address\": \"4281 Osvaldo Ways\",\n    \"city\": \"Stokesfort\",\n    \"state\": \"WI\",\n    \"zip\": 39157\n  }\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Porter Cormier\",\n  \"email\": \"alix.robel@kreiger.co\",\n  \"auth\": \"token This is a token\",\n  \"school\": {\n    \"id\": 106,\n    \"name\": \"Gil Kuphal\",\n    \"address\": \"3557 Logan Circle\",\n    \"city\": \"Marceltown\",\n    \"state\": \"ND\",\n    \"zip\": 39157\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"233819bebbc0664ca0324cec8e149cfb\"",
+        "ETag": "W/\"89d4b4ac9cef3d54ed8ec3feb2daa438\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "7e3b7bc9-fc57-4d1e-8aef-50676bd460e0",
-        "X-Runtime": "0.018019",
-        "Content-Length": "213"
+        "X-Request-Id": "71484896-1c7b-4673-b055-0a1d7db413c2",
+        "X-Runtime": "0.014567",
+        "Content-Length": "210"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
