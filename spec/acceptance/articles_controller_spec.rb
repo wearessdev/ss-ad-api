@@ -104,7 +104,7 @@ resource "Articles" do
 
   post 'api/v1/articles/:id/images.json' do
     with_options with_example: true do
-      parameter :name, 'The name of the Aritcle', required: true
+      parameter :name, 'The name of the Image', required: true
       parameter :caption, required: true
       parameter :file, required: true
     end
