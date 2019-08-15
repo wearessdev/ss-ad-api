@@ -44,7 +44,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/events.json",
-      "request_body": "name=Test+Event&description=Event+Description&date=2009-09-14T08%3A00%3A00%2B00%3A00&school_id=85&location=1234+We+Are+Sports+Social+Ave",
+      "request_body": "name=Test+Event&description=Event+Description&date=2009-09-14T08%3A00%3A00%2B00%3A00&school_id=1475&location=1234+We+Are+Sports+Social+Ave",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -55,14 +55,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Test Event\",\n  \"description\": \"Event Description\",\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"location\": \"1234 We Are Sports Social Ave\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-14T22:36:45.105Z\",\n  \"updated_at\": \"2019-08-14T22:36:45.105Z\"\n}",
+      "response_body": "{\n  \"id\": 170,\n  \"name\": \"Test Event\",\n  \"description\": \"Event Description\",\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"location\": \"1234 We Are Sports Social Ave\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-10T22:30:46.386Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.386Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"f8ffeef98c4fbdb330ee72df4eb28dcf\"",
+        "ETag": "W/\"7a0d23acc3ef76675f8f9ad2034193f3\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "82e5f396-bc39-4e63-8e8e-6ff298b0dddd",
-        "X-Runtime": "0.022745",
-        "Content-Length": "251"
+        "X-Request-Id": "97799bde-9f95-47df-9662-06468d41e036",
+        "X-Runtime": "0.026740",
+        "Content-Length": "253"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

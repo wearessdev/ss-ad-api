@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/schools/94.json",
+      "request_path": "/api/v1/schools/1484.json",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -25,14 +25,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 94,\n  \"name\": \"Ronald Vandervort\",\n  \"address\": \"34927 Frami Throughway\",\n  \"city\": \"West Koreyburgh\",\n  \"state\": \"TX\",\n  \"zip\": 39157,\n  \"created_at\": \"2019-08-14T22:36:45.321Z\",\n  \"updated_at\": \"2019-08-14T22:36:45.321Z\"\n}",
+      "response_body": "{\n  \"id\": 1484,\n  \"name\": \"Young Satterfield\",\n  \"address\": \"3410 Lueilwitz Road\",\n  \"city\": \"West Berniecebury\",\n  \"state\": \"NH\",\n  \"zip\": 39157,\n  \"created_at\": \"2019-08-10T22:30:46.615Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.615Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"c9116046c61ce96190604a1cf22fad17\"",
+        "ETag": "W/\"a943da10c2b3f80731d390980900eb52\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "17027ce4-2963-49c0-b3a8-c856dfc039b6",
-        "X-Runtime": "0.010094",
-        "Content-Length": "201"
+        "X-Request-Id": "16544ad1-3653-419f-8d91-9102b0120bdb",
+        "X-Runtime": "0.010624",
+        "Content-Length": "202"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

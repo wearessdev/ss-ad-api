@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/teams/6.json",
+      "request_path": "/api/v1/teams/309.json",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -26,14 +26,14 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 6,\n  \"name\": \"Lesa Schuster II\",\n  \"thumbnail\": \"path-to-thumbnail\",\n  \"twitter_url\": \"path-to-twitter-url\",\n  \"facebook_url\": \"path-to-facebook-url\",\n  \"instagram_url\": \"path-to-instagram_url\",\n  \"created_at\": \"2019-08-14T22:36:45.461Z\",\n  \"updated_at\": \"2019-08-14T22:36:45.461Z\"\n}",
+      "response_body": "{\n  \"id\": 309,\n  \"name\": \"Miss Linn Volkman\",\n  \"thumbnail\": \"path-to-thumbnail\",\n  \"twitter_url\": \"path-to-twitter-url\",\n  \"facebook_url\": \"path-to-facebook-url\",\n  \"instagram_url\": \"path-to-instagram_url\",\n  \"created_at\": \"2019-08-10T22:30:46.751Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.751Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"037b8a2d70740fbc7ffbd92d06843868\"",
+        "ETag": "W/\"c7ae948fec44702a30605d60d0fe0132\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "274aba46-e92e-429c-9b32-fe843042e4c6",
-        "X-Runtime": "0.004101",
-        "Content-Length": "260"
+        "X-Request-Id": "aeb62791-4866-4784-b28b-365894ca35e4",
+        "X-Runtime": "0.004915",
+        "Content-Length": "263"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

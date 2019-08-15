@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/teams/9/staffs.json",
+      "request_path": "/api/v1/teams/312/staffs.json",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -26,14 +26,14 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 3,\n    \"first_name\": \"Harry\",\n    \"last_name\": \"Wilkinson\",\n    \"title\": \"Assistant Coach to the Assistant\",\n    \"email\": \"hae.halvorson@kemmertillman.biz\",\n    \"phone\": \"739-719-5987\"\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 37,\n    \"first_name\": \"Tomasa\",\n    \"last_name\": \"Morar\",\n    \"title\": \"Assistant Coach to the Assistant\",\n    \"email\": \"ahmad@prosacco.net\",\n    \"phone\": \"457.346.8937\"\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"a1b913b84f89949461d0a52bf0043746\"",
+        "ETag": "W/\"28d211a3b722f166a9de8906a0612bbc\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "93008196-5779-4780-b345-7d13f05f63db",
-        "X-Runtime": "0.007902",
-        "Content-Length": "163"
+        "X-Request-Id": "46dc1cbf-449a-4db3-9fce-cf7ca523c0cc",
+        "X-Runtime": "0.007936",
+        "Content-Length": "148"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

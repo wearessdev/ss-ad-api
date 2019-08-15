@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/teams/8/players.json",
+      "request_path": "/api/v1/teams/311/players.json",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -26,14 +26,14 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 1,\n    \"first_name\": \"Nestor\",\n    \"last_name\": \"Leuschke\",\n    \"jersey_number\": 33,\n    \"position\": \"SG\",\n    \"height\": \"5'11\",\n    \"weight\": \"185\",\n    \"class_name\": \"Junior\",\n    \"created_at\": \"2019-08-14T22:36:45.510Z\",\n    \"updated_at\": \"2019-08-14T22:36:45.510Z\"\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 10,\n    \"first_name\": \"Marlene\",\n    \"last_name\": \"Schaefer\",\n    \"jersey_number\": 33,\n    \"position\": \"SG\",\n    \"height\": \"5'11\",\n    \"weight\": \"185\",\n    \"class_name\": \"Junior\",\n    \"created_at\": \"2019-08-10T22:30:46.803Z\",\n    \"updated_at\": \"2019-08-10T22:30:46.803Z\"\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"5cd9e03ea92cafcc05549bcfc3bf350a\"",
+        "ETag": "W/\"53af0021d51e4ad35473b4773af57bf6\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "47105fbe-3929-46e9-873b-20dc4ee400d7",
-        "X-Runtime": "0.010388",
-        "Content-Length": "223"
+        "X-Request-Id": "1582cc4a-ebcf-4176-a740-7bc4987d3ecc",
+        "X-Runtime": "0.009075",
+        "Content-Length": "225"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

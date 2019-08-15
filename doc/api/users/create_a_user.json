@@ -44,7 +44,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/users.json",
-      "request_body": "name=Lanette+Lebsack&email=jeana.huels%40frami.io&password=This+is+a+long+password&school_id=107",
+      "request_body": "name=Louie+Jakubowski&email=kiara_ledner%40rath.biz&password=This+is+a+long+password&school_id=1497",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -55,14 +55,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 2,\n  \"name\": \"Lanette Lebsack\",\n  \"email\": \"jeana.huels@frami.io\",\n  \"auth\": \"token eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2VtYWlsIjoiamVhbmEuaHVlbHNAZnJhbWkuaW8iLCJzY2hvb2xfaWQiOjEwN30.Hdfl7LSQimG7VasspcgHjEicbi-G6ASgeETZcp1oT_w\",\n  \"school\": {\n    \"id\": 107,\n    \"name\": \"Sean O'Reilly\",\n    \"address\": \"1869 Wyman Harbor\",\n    \"city\": \"East Toneyland\",\n    \"state\": \"OK\",\n    \"zip\": 39157\n  }\n}",
+      "response_body": "{\n  \"id\": 24,\n  \"name\": \"Louie Jakubowski\",\n  \"email\": \"kiara_ledner@rath.biz\",\n  \"auth\": \"token eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2VtYWlsIjoia2lhcmFfbGVkbmVyQHJhdGguYml6Iiwic2Nob29sX2lkIjoxNDk3fQ.tH4gz3hHQqBL0Pf-vIqlVv3GYuwsxtweUA3N0Wo470c\",\n  \"school\": {\n    \"id\": 1497,\n    \"name\": \"Isabel Morissette\",\n    \"address\": \"7233 Lindgren Key\",\n    \"city\": \"Callieport\",\n    \"state\": \"NH\",\n    \"zip\": 39157\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"8e6ee0a0404e5b6b0fbf234cb740b118\"",
+        "ETag": "W/\"49f8104f8f8b6bc82f143b8c3c425542\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "c2bd17b3-f4a1-4684-967b-0eb768ad4855",
-        "X-Runtime": "0.010420",
-        "Content-Length": "338"
+        "X-Request-Id": "06e47d2d-62b2-487e-b226-5fff43459a13",
+        "X-Runtime": "0.012346",
+        "Content-Length": "345"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

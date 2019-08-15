@@ -53,7 +53,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/teams.json",
-      "request_body": "name=Test+Team&sport=Basketball&thumbnail=path-to-img&school_id=99&twitter_url=url-to-twitter&facebook_url=url-to-facebook&instagram_url=url-to-instagram",
+      "request_body": "name=Test+Team&sport=Basketball&thumbnail=path-to-img&school_id=1489&twitter_url=url-to-twitter&facebook_url=url-to-facebook&instagram_url=url-to-instagram",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -64,14 +64,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 5,\n  \"name\": \"Test Team\",\n  \"thumbnail\": \"path-to-img\",\n  \"twitter_url\": \"url-to-twitter\",\n  \"facebook_url\": \"url-to-facebook\",\n  \"instagram_url\": \"url-to-instagram\",\n  \"created_at\": \"2019-08-14T22:36:45.446Z\",\n  \"updated_at\": \"2019-08-14T22:36:45.446Z\"\n}",
+      "response_body": "{\n  \"id\": 308,\n  \"name\": \"Test Team\",\n  \"thumbnail\": \"path-to-img\",\n  \"twitter_url\": \"url-to-twitter\",\n  \"facebook_url\": \"url-to-facebook\",\n  \"instagram_url\": \"url-to-instagram\",\n  \"created_at\": \"2019-08-10T22:30:46.739Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.739Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"999b52581a22a9a7139014eb04988255\"",
+        "ETag": "W/\"c105a38729ba5103e1ecfd5d23d19acc\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "992cb44a-e260-4fbb-be8c-98fc2b84059e",
-        "X-Runtime": "0.011560",
-        "Content-Length": "232"
+        "X-Request-Id": "a5a402bf-a85d-4280-abe8-288d8d605e44",
+        "X-Runtime": "0.010326",
+        "Content-Length": "234"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
