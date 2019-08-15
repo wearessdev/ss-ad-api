@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "api/v1/events/3.json",
+      "request_path": "api/v1/events/172.json",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -26,14 +26,14 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 3,\n  \"name\": \"Ayesha Wiza\",\n  \"description\": \"This is a description\",\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"location\": \"This is a location\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-14T22:36:45.136Z\",\n  \"updated_at\": \"2019-08-14T22:36:45.141Z\",\n  \"deleted_at\": \"2019-08-14T22:36:45.141Z\"\n}",
+      "response_body": "{\n  \"id\": 172,\n  \"name\": \"Dr. Erik Flatley\",\n  \"description\": \"This is a description\",\n  \"date\": \"2009-09-14T08:00:00.000Z\",\n  \"location\": \"This is a location\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-10T22:30:46.422Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.427Z\",\n  \"deleted_at\": \"2019-08-10T22:30:46.427Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"610dbf3d4d8e7866ffdd63ff17799b53\"",
+        "ETag": "W/\"c358d343b75064018e4ed832fc00335a\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "e78e5796-98f6-4cb2-84c2-2658140f52fd",
-        "X-Runtime": "0.007133",
-        "Content-Length": "285"
+        "X-Request-Id": "6c7e6216-e1b0-423f-a1bf-f987461dff7f",
+        "X-Runtime": "0.008168",
+        "Content-Length": "292"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

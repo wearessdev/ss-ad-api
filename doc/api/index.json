@@ -12,13 +12,6 @@
           "method": "post"
         },
         {
-          "description": "Create an Article Image",
-          "link": "articles/create_an_article_image.json",
-          "groups": "all",
-          "route": "api/v1/articles/:id/images.json",
-          "method": "post"
-        },
-        {
           "description": "Deleting Article By ID",
           "link": "articles/deleting_article_by_id.json",
           "groups": "all",

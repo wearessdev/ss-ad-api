@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/staffs/1.json",
+      "request_path": "/api/v1/staffs/35.json",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -25,14 +25,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 1,\n  \"first_name\": \"Alexis\",\n  \"last_name\": \"Bernhard\",\n  \"title\": \"Assistant Coach to the Assistant\",\n  \"email\": \"jan@fritsch.co\",\n  \"phone\": \"(936) 293-5966 x845\",\n  \"created_at\": \"2019-08-14T22:36:45.388Z\",\n  \"updated_at\": \"2019-08-14T22:36:45.388Z\"\n}",
+      "response_body": "{\n  \"id\": 35,\n  \"first_name\": \"Sherman\",\n  \"last_name\": \"Zulauf\",\n  \"title\": \"Assistant Coach to the Assistant\",\n  \"email\": \"gayle.predovic@steuber.info\",\n  \"phone\": \"940-458-7131 x12236\",\n  \"created_at\": \"2019-08-10T22:30:46.689Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.689Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"505dbfa23e19bd6dafe160c24c016693\"",
+        "ETag": "W/\"6388a35f4c51197deabf138ddf4cd908\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "a8e59c4b-185b-4b67-9639-fcc86cee67dd",
-        "X-Runtime": "0.010586",
-        "Content-Length": "231"
+        "X-Request-Id": "444a0f84-3a46-45f2-bfb4-2a49c5e6b8e2",
+        "X-Runtime": "0.009917",
+        "Content-Length": "244"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

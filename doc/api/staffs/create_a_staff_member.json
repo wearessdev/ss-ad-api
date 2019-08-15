@@ -43,7 +43,7 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "/api/v1/teams/4/staffs.json",
+      "request_path": "/api/v1/teams/307/staffs.json",
       "request_body": "first_name=Coach&last_name=Test&title=Assistant+Coach+to+the+Assistant&email=testcoach%40testng.com&phone=321-456-7580",
       "request_headers": {
         "Host": "example.org",
@@ -55,14 +55,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 2,\n  \"first_name\": \"Coach\",\n  \"last_name\": \"Test\",\n  \"title\": \"Assistant Coach to the Assistant\",\n  \"email\": \"testcoach@testng.com\",\n  \"phone\": \"321-456-7580\",\n  \"created_at\": \"2019-08-14T22:36:45.414Z\",\n  \"updated_at\": \"2019-08-14T22:36:45.414Z\"\n}",
+      "response_body": "{\n  \"id\": 36,\n  \"first_name\": \"Coach\",\n  \"last_name\": \"Test\",\n  \"title\": \"Assistant Coach to the Assistant\",\n  \"email\": \"testcoach@testng.com\",\n  \"phone\": \"321-456-7580\",\n  \"created_at\": \"2019-08-10T22:30:46.715Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.715Z\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"0d531922611e6f37be3a2bc3c28c36fa\"",
+        "ETag": "W/\"3fc4753a492f34f95f04a7259e2034d5\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "d065580e-070b-4086-be50-49d582fc6d4b",
-        "X-Runtime": "0.007607",
-        "Content-Length": "225"
+        "X-Request-Id": "4fa083ed-1c28-4987-b21b-8579ef987a51",
+        "X-Runtime": "0.006206",
+        "Content-Length": "226"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

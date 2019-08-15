@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "api/v1/articles/72/dislike.json",
+      "request_path": "api/v1/articles/233/dislike.json",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -26,14 +26,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 72,\n  \"name\": \"Mr. Alia Waelchi\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": -1,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 72,\n    \"name\": \"David Hauck\",\n    \"email\": \"leonila.pfeffer@doyle.name\",\n    \"image\": \"path-to-image\"\n  }\n}",
+      "response_body": "{\n  \"id\": 233,\n  \"name\": \"Valrie Abbott\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": -1,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 250,\n    \"name\": \"Shirley Runolfsson\",\n    \"email\": \"edie@parker.net\",\n    \"image\": \"path-to-image\"\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"b85fa2075438604830f3256a24bcc512\"",
+        "ETag": "W/\"e3e5959908d1a22b89aea897d62fe1ff\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "1dc1a997-5e46-446e-801d-f6ae7ebbe21f",
-        "X-Runtime": "0.009699",
-        "Content-Length": "219"
+        "X-Request-Id": "c151d100-915c-4a0c-b377-4271a44512bc",
+        "X-Runtime": "0.011236",
+        "Content-Length": "214"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

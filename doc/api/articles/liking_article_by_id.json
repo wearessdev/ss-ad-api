@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "api/v1/articles/70/like.json",
+      "request_path": "api/v1/articles/231/like.json",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -26,14 +26,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 70,\n  \"name\": \"Omega Rath\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 1,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 70,\n    \"name\": \"Gabriele Brekke\",\n    \"email\": \"christian@ullrichnader.co\",\n    \"image\": \"path-to-image\"\n  }\n}",
+      "response_body": "{\n  \"id\": 231,\n  \"name\": \"Roxane Schulist\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 1,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 248,\n    \"name\": \"Miss Alyse Willms\",\n    \"email\": \"dalton.kuhn@bergnaumprosacco.com\",\n    \"image\": \"path-to-image\"\n  }\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"f9b98850b559b4af213f35f1badc22c5\"",
+        "ETag": "W/\"2475e62539effcc3b8bbd546426b389c\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "3a2b3682-ce8b-4daf-8c3a-c6a96aed9998",
-        "X-Runtime": "0.012224",
-        "Content-Length": "215"
+        "X-Request-Id": "73e57511-a603-4a24-bca5-2c4a72a98fa8",
+        "X-Runtime": "0.013849",
+        "Content-Length": "231"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

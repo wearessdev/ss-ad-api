@@ -14,7 +14,7 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "api/v1/articles/69.json",
+      "request_path": "api/v1/articles/230.json",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -26,14 +26,14 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 69,\n  \"name\": \"Kristopher Kiehn IV\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 69,\n    \"name\": \"Lauryn Langworth\",\n    \"email\": \"alyson@bernhard.name\",\n    \"image\": \"path-to-image\"\n  },\n  \"categories\": [\n\n  ],\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-14T22:36:44.865Z\",\n  \"updated_at\": \"2019-08-14T22:36:44.870Z\",\n  \"deleted_at\": \"2019-08-14T22:36:44.870Z\",\n  \"content\": \"This is content\"\n}",
+      "response_body": "{\n  \"id\": 230,\n  \"name\": \"Lida Thompson\",\n  \"is_published\": true,\n  \"publish_date\": \"2009-09-14T08:00:00.000Z\",\n  \"likes\": 0,\n  \"loves\": 0,\n  \"author\": {\n    \"id\": 247,\n    \"name\": \"Dottie Ratke Jr.\",\n    \"email\": \"jorge_fay@littel.io\",\n    \"image\": \"path-to-image\"\n  },\n  \"categories\": [\n\n  ],\n  \"images\": [\n\n  ],\n  \"created_at\": \"2019-08-10T22:30:46.227Z\",\n  \"updated_at\": \"2019-08-10T22:30:46.233Z\",\n  \"deleted_at\": \"2019-08-10T22:30:46.233Z\",\n  \"content\": \"This is content\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"e38c2441e60f1580f136834abb4183ed\"",
+        "ETag": "W/\"5de5178ad1fb70cd43865dbaf19e7f78\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "9c0a82e6-c6c8-4750-a2b7-4af638ac7c9d",
-        "X-Runtime": "0.011288",
-        "Content-Length": "396"
+        "X-Request-Id": "0edf0476-24e0-449e-b8fa-0e044d9fbcf9",
+        "X-Runtime": "0.010601",
+        "Content-Length": "391"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
