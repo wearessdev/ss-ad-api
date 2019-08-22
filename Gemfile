@@ -50,9 +50,11 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faker'
 
 # Helps with building swagger--API docs
-gem 'rspec_api_documentation'
 gem "apitome"
+gem 'rspec_api_documentation'
 gem 'rswag'
+
+gem "nokogiri", ">= 1.10.4"
 
 # Soft delete all(most) of the things
 gem "paranoia", "~> 2.2"
