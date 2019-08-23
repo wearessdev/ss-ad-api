@@ -19,14 +19,14 @@ Team.create([
             ])
 
 Player.create([
-                { first_name: "Kelcy", last_name: "Gooch", school_id: 1, team_id: 1, jersey_number: 7, position: "SG", height: "6.0", weight: "193", class_name: "Senior" },
-                { first_name: "CJ", last_name: "Goodwill", school_id: 2, team_id: 2, jersey_number: 33, position: "LB", height: "5.7", weight: "185", class_name: "Senior" }
+                { name: "Kelcy Gooch", school_id: 1, team_id: 1, jersey_number: 7, position: "SG", height: "6.0", weight: "193", year: "Senior" },
+                { name: "CJ Goodwill", school_id: 2, team_id: 2, jersey_number: 33, position: "LB", height: "5.7", weight: "185", year: "Senior" }
 
               ])
 
 Staff.create([
-               { first_name: "Brandon", last_name: "Fallings", title: "Shooting Coach", email: "brandonfallings@iamthatguy.yep", phone: "555-223-1123", team_id: 1, school_id: 1 },
-               { first_name: "Ray", last_name: "Lewis", title: "Line Backer Coach", email: "RayLewis@iamthatguy.yep", phone: "555-223-1123", team_id: 2, school_id: 2 }
+               { name: "Brandon Fallings", title: "Shooting Coach", email: "brandonfallings@iamthatguy.yep", phone: "555-223-1123", team_id: 1, school_id: 1 },
+               { name: "Ray Lewis", title: "Line Backer Coach", email: "RayLewis@iamthatguy.yep", phone: "555-223-1123", team_id: 2, school_id: 2 }
              ])
 
 Season.create([
