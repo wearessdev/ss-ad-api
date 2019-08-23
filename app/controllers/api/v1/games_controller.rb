@@ -51,6 +51,6 @@ class Api::V1::GamesController < Api::BaseController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def game_params
-    params.permit(:date, :opponent, :location, :home_away, :win, :loss, :score, :school_id, :team_id, :season_id)
+    params.permit(:date, :opponent, :location, :home_away, :time, :win, :loss, :score, :school_id, :team_id, :season_id)
   end
 end

@@ -18,7 +18,7 @@ class Api::V1::SeasonsController < Api::BaseController
     @season = Season.new(season_params)
 
     if @season.save
-      render :show, status: :created, location: @season
+      render :show, status: :created
     else
       render json: @season.errors, status: :unprocessable_entity
     end
@@ -28,7 +28,7 @@ class Api::V1::SeasonsController < Api::BaseController
   # PATCH/PUT /seasons/1.json
   def update
     if @season.update(season_params)
-      render :show, status: :ok, location: @season
+      render :show, status: :ok
     else
       render json: @season.errors, status: :unprocessable_entity
     end
@@ -48,6 +48,6 @@ class Api::V1::SeasonsController < Api::BaseController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def season_params
-      params.require(:season).permit(:year_start, :year_end)
+      params.permit(:year_start, :year_end, :team_id)
     end
 end

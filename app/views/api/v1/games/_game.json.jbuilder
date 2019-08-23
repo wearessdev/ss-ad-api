@@ -2,6 +2,7 @@
 
 json.id         game.id
 json.date       game.date
+json.time       game.time
 json.opponent   game.opponent
 json.location   game.location
 json.home_away  game.home_away

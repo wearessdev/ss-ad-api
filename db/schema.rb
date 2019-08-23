@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_23_003926) do
+ActiveRecord::Schema.define(version: 2019_08_23_020141) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -108,6 +108,7 @@ ActiveRecord::Schema.define(version: 2019_08_23_003926) do
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "time"
     t.index ["school_id"], name: "index_games_on_school_id"
     t.index ["season_id"], name: "index_games_on_season_id"
     t.index ["team_id"], name: "index_games_on_team_id"
