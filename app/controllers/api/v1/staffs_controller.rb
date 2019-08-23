@@ -50,6 +50,6 @@ class Api::V1::StaffsController < Api::BaseController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def staff_params
-    params.permit(:first_name, :last_name, :title, :email, :phone, :team_id)
+    params.permit(:name, :title, :email, :phone, :team_id)
   end
 end

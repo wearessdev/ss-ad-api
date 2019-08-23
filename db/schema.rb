@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_15_032436) do
+ActiveRecord::Schema.define(version: 2019_08_23_003926) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -127,18 +127,17 @@ ActiveRecord::Schema.define(version: 2019_08_15_032436) do
   end
 
   create_table "players", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
     t.bigint "school_id"
     t.integer "team_id"
     t.integer "jersey_number"
     t.string "position"
     t.string "height"
     t.string "weight"
-    t.string "class_name"
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "year"
     t.index ["school_id"], name: "index_players_on_school_id"
     t.index ["team_id"], name: "index_players_on_team_id"
   end
@@ -167,8 +166,6 @@ ActiveRecord::Schema.define(version: 2019_08_15_032436) do
   end
 
   create_table "staffs", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
     t.string "title"
     t.string "email"
     t.string "phone"
@@ -177,6 +174,7 @@ ActiveRecord::Schema.define(version: 2019_08_15_032436) do
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
     t.index ["school_id"], name: "index_staffs_on_school_id"
     t.index ["team_id"], name: "index_staffs_on_team_id"
   end

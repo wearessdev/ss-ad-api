@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Api::V1::PlayersController < Api::BaseController
-  before_action :set_player, only: [:show, :update, :destroy]
+  before_action :set_player, only: %i[show update destroy]
 
   # GET /players
   # GET /players.json
@@ -9,8 +11,7 @@ class Api::V1::PlayersController < Api::BaseController
 
   # GET /players/1
   # GET /players/1.json
-  def show
-  end
+  def show; end
 
   # POST /players
   # POST /players.json
@@ -18,7 +19,7 @@ class Api::V1::PlayersController < Api::BaseController
     @player = Player.new(player_params)
 
     if @player.save
-      render :show, status: :created, location: @player
+      render :show, status: :created
     else
       render json: @player.errors, status: :unprocessable_entity
     end
@@ -28,7 +29,7 @@ class Api::V1::PlayersController < Api::BaseController
   # PATCH/PUT /players/1.json
   def update
     if @player.update(player_params)
-      render :show, status: :ok, location: @player
+      render :show, status: :ok
     else
       render json: @player.errors, status: :unprocessable_entity
     end
@@ -41,13 +42,14 @@ class Api::V1::PlayersController < Api::BaseController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_player
-      @player = Player.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def player_params
-      params.require(:player).permit(:first_name, :last_name, :jersey_number, :position, :height, :weight, :class_name)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_player
+    @player = Player.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def player_params
+    params.permit(:name, :jersey_number, :position, :height, :weight, :year, :team_id)
+  end
 end
