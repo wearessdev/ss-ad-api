@@ -44,7 +44,7 @@ gem 'kaminari'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
 
 # Create Fake Data to Test with
 gem 'faker'
