@@ -27,7 +27,7 @@ class Api::V1::SchoolsController < Api::BaseController
   # PATCH/PUT /schools/1.json
   def update
     if @school.update(school_params)
-      render :show, status: :ok, location: @school
+      render :show, status: :ok
     else
       render json: @school.errors, status: :unprocessable_entity
     end
